@@ -7,12 +7,12 @@ export default function Home() {
     <div className="site-shell">
       <header className="header">
         <a className="wordmark" href="#home" aria-label="Level up with Sam home"><Scissors size={23} strokeWidth={1.4}/><span>LEVEL UP <em>with Sam</em></span></a>
-        <nav className="top-nav" aria-label="Main navigation"><a href="#service-menu">Services</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a className="nav-book" href={booksy}>Book on Booksy <ArrowUpRight size={16}/></a></nav>
+        <nav className="top-nav" aria-label="Main navigation"><a href="#service-menu">Services</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a><a className="nav-book" href={booksy} target="_blank" rel="noopener noreferrer">Book on Booksy <ArrowUpRight size={16}/></a></nav>
       </header>
       <main id="home">
         <section className="hero" aria-labelledby="hero-title">
           <div className="portrait-wrap">
-            <div className="portrait" role="img" aria-label="Sam styling a client's long blonde hair" />
+            <div className="portrait"><img src="/sam-reference.png" alt="Sam styling a client's long blonde hair" fetchPriority="high" /></div>
             <div className="portrait-caption"><span>GOOD HAIR. GREAT ENERGY.</span><span>By Sam <ArrowUpRight size={16}/></span></div>
           </div>
           <div className="hero-copy">
@@ -21,7 +21,7 @@ export default function Home() {
             <p className="intro">This is where the magic happens.</p>
             <p className="description">Personalized haircuts, effortless styling, and beautiful color in San Diego. Expert care for a look that feels like you—just leveled up.</p>
             <div className="booking">
-              <a className="book-button" href={booksy}>Book on Booksy <ArrowUpRight size={20}/></a>
+              <a className="book-button" href={booksy} target="_blank" rel="noopener noreferrer">Book on Booksy <ArrowUpRight size={20}/></a>
               <p>Choose your service and time on Booksy</p>
               <a className="book-button hero-call" href="tel:+13165162052">Call Sam · (316) 516-2052 <Phone size={20}/></a>
             </div>
